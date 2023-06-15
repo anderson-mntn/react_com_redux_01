@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 
 function Header(){
   
-    const count = useSelector((state)=>{ return state})
+    const count = useSelector((state)=>{ return state.counter})
 
     return(<div>
        <h3>Header: {count}</h3> 
