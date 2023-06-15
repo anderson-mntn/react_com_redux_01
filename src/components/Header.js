@@ -1,8 +1,12 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 function Header(){
+  
+    const count = useSelector((state)=>{ return state})
+
     return(<div>
-        Header:
+       <h3>Header: {count}</h3> 
     </div>)
 }
 
