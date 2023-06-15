@@ -1,14 +1,14 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 
 function Counter(props){
 
-    const [count, setCount] = useState(3)
+    const count = useSelector((state)=>{ return state})
 
-    
     return(<div>
-        <div>Counter: {count}</div>
-        <button onClick={()=>{setCount((a)=> a - 1)}}>-</button>
-        <button onClick={()=>{setCount((a)=> a + 1)}}>+</button>
+        <div>Counter: {count} </div>
+        <button onClick={()=>{}}>-</button>
+        <button onClick={()=>{}}>+</button>
     </div>)
 }
 
